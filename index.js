@@ -15,7 +15,7 @@ app.get('/ufs', (req, res) => {
 });
 
 app.get('/ufs/sigla/:uf', (req, res) => {
-    req.query.bsca;
+    req.query.busca;
     const resultado = sigla ? buscarPorSigla(sigla) : colecaoUF;
 
     if (resultado.length > 0) {
